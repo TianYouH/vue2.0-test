@@ -1,5 +1,6 @@
 <template>
   <div id="lifecycle">
+    <h2>生命周期 （含父子） 测试</h2>
     <h3>父组件</h3>
     <el-button type="primary" size="default" @click="onClick">切换子组件,测试 activated</el-button>
     
