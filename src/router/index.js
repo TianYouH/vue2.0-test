@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/home-view'
+import Welcome from '../views/home-view/page/Welcome.vue'
 import TodoView from '../views/todo-view'
 
 Vue.use(VueRouter)
@@ -10,12 +11,23 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
+    redirect: '/home',
     children: [
       {
-        path: '/home/drop',
+        path: '/home',
+        name: 'welcome',
+        component: Welcome
+      },
+      {
+        path: '/webapi/drop',
         name: 'drop',
         component: () => import(/* webpackChunkName: "home" */ '../views/home-view/page/Drop.vue'),
-      }
+      },
+      {
+        path: '/plug-in/clodop',
+        name: 'clodop',
+        component: () => import(/* webpackChunkName: "home" */ '../views/home-view/page/c-lodop'),
+      },
     ]
   },
   {
