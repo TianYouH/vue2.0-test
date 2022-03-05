@@ -24,6 +24,11 @@ const routes = [
         component: () => import(/* webpackChunkName: "home" */ '../views/home-view/page/lifecycle'),
       },
       {
+        path: '/vue/custom-v-model',
+        name: 'customVModel',
+        component: () => import(/* webpackChunkName: "home" */ '../views/home-view/page/CustomVModel.vue'),
+      },
+      {
         path: '/webapi/drop',
         name: 'drop',
         component: () => import(/* webpackChunkName: "home" */ '../views/home-view/page/Drop.vue'),
