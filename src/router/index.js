@@ -19,6 +19,11 @@ const routes = [
         component: Welcome
       },
       {
+        path: '/vue/lifecycle',
+        name: 'lifecycle',
+        component: () => import(/* webpackChunkName: "home" */ '../views/home-view/page/lifecycle'),
+      },
+      {
         path: '/webapi/drop',
         name: 'drop',
         component: () => import(/* webpackChunkName: "home" */ '../views/home-view/page/Drop.vue'),
