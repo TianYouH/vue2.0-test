@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="drop">
     <div>
       <div class="team" v-for="(team, tindex) in teamDataArr" :key="tindex">
         <div

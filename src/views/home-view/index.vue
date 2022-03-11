@@ -14,14 +14,18 @@
           <el-menu-item index="/vue/custom-v-model" >Custom v-model</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
+          <template slot="title">Javascript</template>
+          <el-menu-item index="/javascript/object" >Object</el-menu-item>
+        </el-submenu>
+        <el-submenu index="4">
           <template slot="title">Web Api</template>
           <el-menu-item index="/webapi/drop" >HTML 拖放 API</el-menu-item>
         </el-submenu>
-        <el-submenu index="4">
+        <el-submenu index="5">
           <template slot="title">三方插件</template>
           <el-menu-item index="/plug-in/clodop" >CLodop</el-menu-item>
         </el-submenu>
-        <el-submenu index="5">
+        <el-submenu index="6">
           <template slot="title">实战目录</template>
           <el-menu-item index="/todo"  >Todo</el-menu-item>
         </el-submenu>

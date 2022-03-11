@@ -34,6 +34,11 @@ const routes = [
         component: () => import(/* webpackChunkName: "home" */ '../views/home-view/page/Drop.vue'),
       },
       {
+        path: '/javascript/object',
+        name: 'object',
+        component: () => import(/* webpackChunkName: "home" */ '../views/home-view/page/Object.vue'),
+      },
+      {
         path: '/plug-in/clodop',
         name: 'clodop',
         component: () => import(/* webpackChunkName: "home" */ '../views/home-view/page/c-lodop'),
