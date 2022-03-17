@@ -12,6 +12,7 @@
           <template slot="title">Vue</template>
           <el-menu-item index="/vue/lifecycle" >Lifecycle</el-menu-item>
           <el-menu-item index="/vue/custom-v-model" >Custom v-model</el-menu-item>
+          <el-menu-item index="/vue/vue-router" >VueRouter</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
           <template slot="title">Javascript</template>
